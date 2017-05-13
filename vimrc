@@ -39,7 +39,7 @@ inoremap ( ()<Esc>i
 inoremap [ []<Esc>i
 inoremap " ""<Esc>i
 inoremap ' ''<Esc>i
-inoremap cc <C-x><C-o>
+inoremap <leader>x <C-x><C-o>
 
 " Working with split windows
 " ==============================================================================
