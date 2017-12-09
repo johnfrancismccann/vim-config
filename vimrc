@@ -48,6 +48,11 @@ autocmd WinNew * wincmd = " make split windows equal in size (including doc)
 set splitbelow
 set splitright
 
+" ctags
+" ==============================================================================
+map <leader>a :vsp <CR>:exec("tag ".expand("<cword>"))<CR>
+map <leader>f :split <CR>:exec("tag ".expand("<cword>"))<CR>
+
 " Tab navigation
 " ==============================================================================
 ca tn tabnew
@@ -68,8 +73,9 @@ set shiftwidth=4
 set softtabstop=4           " number of columns used when inserting tab
 set tabstop=4               " number of columns displayed for a tab character
 set backspace=2
+noremap <leader>o o<Esc>k
+nnoremap <leader>O O<Esc>k
 
 " NERDCommenter
 " ==============================================================================
 let g:NERDSpaceDelims = 1  " add space after comment delimter 
-
